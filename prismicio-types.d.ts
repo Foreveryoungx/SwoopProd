@@ -578,12 +578,12 @@ export interface HeroSliceDefaultPrimary {
   /**
    * Heading field in *Hero → Primary*
    *
-   * - **Field Type**: Title
-   * - **Placeholder**: *None*
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Red Italics
    * - **API ID Path**: hero.primary.heading
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  heading: prismic.TitleField;
+  heading: prismic.RichTextField;
 
   /**
    * Body field in *Hero → Primary*

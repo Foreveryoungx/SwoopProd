@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import StarGrid from "@/components/StarGrid";
 import { isFilled, Content } from "@prismicio/client";
-import { PrismicRichText, PrismicText } from "@prismicio/react";
+import { PrismicRichText } from "@prismicio/react";
 import ButtonLink from "@/components/ButtonLink";
 import { PrismicNextImage } from "@prismicio/next";
 import { useGSAP } from "@gsap/react";
@@ -70,7 +70,30 @@ export default function AnimatedContent({
             "hero__heading text-balance text-5xl font-medium opacity-0 md:text-7xl"
           }
         >
-          <PrismicText field={slice.primary.heading} />
+          <PrismicRichText
+            field={slice.primary.heading}
+            components={{
+              heading2: ({ children }) => (
+                <h2 className="balance text-center text-3xl font-medium md:text-6xl">
+                  {children}
+                </h2>
+              ),
+              heading1: ({ children }) => (
+                <h1
+                  className={
+                    "balance text-center text-6xl font-medium md:text-7xl"
+                  }
+                >
+                  {children}
+                </h1>
+              ),
+              em: ({ children }) => (
+                <em className="bg-gradient-to-b from-red-300 to-red-900 bg-clip-text not-italic text-transparent">
+                  {children}
+                </em>
+              ),
+            }}
+          />
         </h1>
       )}
 

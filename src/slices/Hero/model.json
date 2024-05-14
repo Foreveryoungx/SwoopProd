@@ -16,9 +16,9 @@
           "type": "StructuredText",
           "config": {
             "label": "Heading",
-            "placeholder": "",
+            "placeholder": "Red Italics",
             "allowTargetBlank": true,
-            "single": "heading1"
+            "multi": "heading1,heading2,em"
           }
         },
         "body": {

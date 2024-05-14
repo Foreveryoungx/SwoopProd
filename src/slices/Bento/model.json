@@ -18,7 +18,7 @@
             "label": "Heading",
             "placeholder": "italic gold text",
             "allowTargetBlank": true,
-            "multi": "heading2,em"
+            "single": "heading2,em"
           }
         },
         "body": {
